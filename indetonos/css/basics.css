@@ -188,7 +188,8 @@ footer{
 /*--------*/
 
 
-/* responsive */
+
+/* responsive   */
 @media only screen and (max-width:320px){
     header div .blur h1{
         font-size: 200%;
