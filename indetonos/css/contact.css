@@ -9,6 +9,7 @@
                          'article article'
                          'footer footer';
     grid-template-rows: 1fr 0.3fr 3fr 1.4fr;
+    font-size: 2.5vw;
 }
 /*--------*/
 
@@ -25,7 +26,7 @@ header div{
     display: flex;
     align-items: center;
 }
-header div h1{
+header div .blur h1{
     font-size: 300%;
     padding-bottom: 1%;
 }
@@ -37,7 +38,12 @@ header div figure{
 header div img{
      max-width: 80%; 
 }
-
+header div .blur{
+    backdrop-filter: blur(10px);
+    background-color: rgb(170,170,170,0.5);
+    box-shadow: inset 1px 1px 15px 5px rgb(100 100 100);
+    border: 1px solid rgba(255, 255, 255, 0);
+}
 /*--------*/
 
 /*NAV*/
@@ -51,7 +57,7 @@ nav{
 nav li{
     float: left;
     width: 8em;
-    font-size: 150%;
+    font-size: 100%;
     list-style: none;
 }
 nav li,a{
