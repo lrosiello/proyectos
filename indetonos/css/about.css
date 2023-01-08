@@ -1,129 +1,207 @@
 /*CONTAINER*/
-.container{
+.container {
     background-color: rgb(249, 250, 250);
     color: rgb(6, 26, 45);
     display: grid;
     grid-template-areas: 'header header'
-                         'nav nav'
-                         'article article'
-                         'footer footer';
-    grid-template-rows: 1fr 0.3fr 3fr 1.4fr;
+        'nav nav'
+        'article article'
+        'footer footer';
+    grid-template-rows: 1fr 0.3fr 4fr 1.4fr;
     font-size: 2.5vw;
 }
+
 /*--------*/
 
 
 
-article{
-    /*grid-area: article;
-    background-color: transparent ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;*/
-}
 
-article .story-text{
+
+article .story-text {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     padding: 1%;
-    width: 50%;
+    width: 90%;
     font-size: 75%;
     height: 100%;
     position: relative;
 }
 
-article .story-text .text1{
-    margin-top: 15%;
+article .story-text .card {
+    display: flex;
+    flex-direction: column;
+}
+
+article .story-text .card figure {
+    height: 30vw;
+    width: 100%;
+    margin-left: 0;
+}
+
+article .story-text .card .band {
+    background-image: url(../images/banda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+article .story-text .card .paco {
+    background-image: url(../images/paco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+article .story-text .card .zaki {
+    background-image: url(../images/zaki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+article .story-text .card .pachi {
+    background-image: url(../images/pachi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+article .story-text .text1 {
+    margin-top: 10%;
+    margin-left: 18%;
+    width: 60%;
     opacity: 1;
-    position:absolute;
+    position: absolute;
 }
-article .story-text .text2{
+
+article .story-text .text2 {
     margin-top: 15%;
+    margin-left: 25%;
+    width: 60%;
     opacity: 0;
-    position:absolute;
+    position: absolute;
 }
-article .story-text .text3{
+
+article .story-text .text3 {
     margin-top: 15%;
+    margin-left: 25%;
+    width: 60%;
     opacity: 0;
-    position:absolute;
+    position: absolute;
 }
-article .story-text .text4{
+
+article .story-text .text4 {
     margin-top: 15%;
+    margin-left: 25%;
+    width: 60%;
     opacity: 0;
-    position:absolute;
+    position: absolute;
 }
-article .text1 h2:first-child{
+
+article .text1 h2:first-child,
+.text2 h2:first-child,
+.text3 h2:first-child,
+.text4 h2:first-child {
     font-size: 200%;
     text-decoration: underline;
 }
 
-article .story-text button{
+
+article .story-text button {
     cursor: pointer;
 }
 
-article .story-text .buttonUp,.buttonDown {
-    background-color:midnightblue;
+
+article .story-text .buttonUp,
+.buttonDown {
+    background-color: midnightblue;
     filter: drop-shadow(1px -1px 7px rgba(10, 9, 8, 0.733));
     color: #0d091f;
     height: 5vw;
     width: 5vw;
     align-self: center;
-    
+    color: aqua;
     animation: buttons 1s infinite;
     cursor: pointer;
-    
+
 }
 
 
-@keyframes buttons{
-    0%{
-        transform: rotate(45deg);
+@keyframes buttons {
+    0% {
+        transform: rotate(20deg);
         transform: scale(1);
     }
-    50%{
-        transform: scale(1.5);
-        transform: rotate(45deg);
+
+    25% {
+
+        transform: rotate(20deg);
     }
-    75%{
+
+    50% {
+
+        transform: rotate(-20deg);
+    }
+
+    75% {
         transform: scale(0.8);
-        
     }
-    0%{
+
+    100% {
         transform: scale(1);
+
     }
 }
 
 
-.animarScroll{
+.animarScroll {
     animation: animarScroll 1s forwards;
 }
 
-.desanimarScroll{
+.desanimarScroll {
     animation: desanimarScroll 1s forwards;
 }
 
-@keyframes animarScroll{
-    0%{
+@keyframes animarScroll {
+    0% {
         opacity: 0;
-        transform:rotate(180deg);
+        transform: rotate(180deg);
     }
-    100%{
+
+    100% {
         opacity: 1;
-        transform:rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
-@keyframes desanimarScroll{
-    0%{
+@keyframes desanimarScroll {
+    0% {
         opacity: 1;
         transform: translateX(50px);
     }
-    50%{
+
+    50% {
         transform: translateX(400px);
     }
-    100%{
+
+    100% {
         opacity: 0;
         transform: translateX(1000px);
+    }
+}
+
+
+
+
+/* responsive   */
+@media only screen and (max-width:320px) {
+    article .story-text .card figure {
+        height: 18vw;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    article .story-text .card .band {
+        background-position: top 20% center;
     }
 }
