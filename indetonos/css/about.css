@@ -219,3 +219,28 @@ article .story-text .buttonUp,
     }
 
 }
+
+@media only screen and (max-width : 480px) {
+
+    /*CONTAINER*/
+    .container {
+        background-color: rgb(249, 250, 250);
+        color: rgb(6, 26, 45);
+        display: grid;
+        grid-template-areas: 'header header'
+            'nav nav'
+            'article article'
+            'footer footer';
+        grid-template-rows: 3fr 0.3fr 8fr 1.4fr;
+        font-size: 2.5vw;
+
+    }
+
+    footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        margin-left: 0;
+        height: 20%;
+    }
+}
