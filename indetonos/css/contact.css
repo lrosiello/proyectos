@@ -1,70 +1,81 @@
-
 /*CONTAINER*/
-.container{
+.container {
     background-color: rgb(249, 250, 250);
     color: rgb(6, 26, 45);
     display: grid;
     grid-template-areas: 'header header'
-                         'nav nav'
-                         'article article'
-                         'footer footer';
+        'nav nav'
+        'article article'
+        'footer footer';
     grid-template-rows: 1fr 0.3fr 3fr 1.4fr;
     font-size: 2.5vw;
 }
+
 /*--------*/
 
 /*HEADER*/
-header{
+header {
     grid-area: header;
-    background-color: rgb(219, 233, 248) ;
+    background-color: rgb(219, 233, 248);
     background-image: url(../images/main.jpg);
     background-repeat: no-repeat;
-    background-position:top 0% center;
-    background-size:120%;
+    background-position: top 0% center;
+    background-size: 120%;
 }
-header div{
+
+header div {
     display: flex;
     align-items: center;
 }
-header div .blur h1{
+
+header div .blur h1 {
     font-size: 300%;
     padding-bottom: 1%;
 }
-header div figure{
-     width: 15%;
-     height: 70%;
-     margin-top: 1%;
+
+header div figure {
+    width: 15%;
+    height: 70%;
+    margin-top: 1%;
 }
-header div img{
-     max-width: 80%; 
+
+header div img {
+    max-width: 80%;
 }
-header div .blur{
+
+header div .blur {
     backdrop-filter: blur(10px);
-    background-color: rgb(170,170,170,0.5);
+    background-color: rgb(170, 170, 170, 0.5);
     box-shadow: inset 1px 1px 15px 5px rgb(100 100 100);
     border: 1px solid rgba(255, 255, 255, 0);
 }
+
 /*--------*/
 
 /*NAV*/
-nav{
+nav {
     grid-area: nav;
-    background-color:rgb(116, 109, 161) ;
+    background-color: rgb(116, 109, 161);
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
 }
-nav li{
+
+nav li {
     float: left;
     width: 8em;
     font-size: 100%;
     list-style: none;
 }
-nav li,a{
+
+nav li,
+a {
     text-decoration: none;
     transition: all 1s ease;
 }
-nav li:hover,a:hover{
+
+nav li:hover,
+a:hover {
     transform: scale(1.4);
     color: aliceblue;
 }
@@ -73,29 +84,35 @@ nav li:hover,a:hover{
 /*--------*/
 
 /*ARTICLE*/
-article{
+article {
     grid-area: article;
-    background-color: transparent ;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-article h1{
+
+article h1 {
     margin-top: 0.5%;
     margin-bottom: 0;
     margin-left: 2%;
     font-size: 400%;
-    
+
 }
-article div{
+
+article div {
     background-color: silver;
     width: 60%;
 }
-article div li{
-    list-style:circle;
+
+article div li {
+    list-style: circle;
     margin-top: 10%;
 }
 
+article div li a {
+    color: darkblue;
+}
 
 /*--------*/
 
@@ -103,8 +120,8 @@ article div li{
 
 
 /* responsive   */
-@media only screen and (max-width:320px){
-    header div .blur h1{
+@media only screen and (max-width:320px) {
+    header div .blur h1 {
         font-size: 200%;
     }
 }

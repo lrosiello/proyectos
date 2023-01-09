@@ -33,7 +33,7 @@ article .story-text .card {
 }
 
 article .story-text .card figure {
-    height: 30vw;
+    height: 24vw;
     width: 100%;
     margin-left: 0;
 }
@@ -42,7 +42,7 @@ article .story-text .card .band {
     background-image: url(../images/banda.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top 10% center;
 }
 
 article .story-text .card .paco {
@@ -56,14 +56,14 @@ article .story-text .card .zaki {
     background-image: url(../images/zaki.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top 10% center;
 }
 
 article .story-text .card .pachi {
     background-image: url(../images/pachi.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top 10% center;
 }
 
 article .story-text .text1 {
@@ -75,24 +75,25 @@ article .story-text .text1 {
 }
 
 article .story-text .text2 {
-    margin-top: 15%;
-    margin-left: 25%;
+    margin-top: 10%;
+    margin-left: 18%;
     width: 60%;
     opacity: 0;
     position: absolute;
 }
 
 article .story-text .text3 {
-    margin-top: 15%;
-    margin-left: 25%;
+    margin-top: 10%;
+    margin-left: 18%;
+    ;
     width: 60%;
     opacity: 0;
     position: absolute;
 }
 
 article .story-text .text4 {
-    margin-top: 15%;
-    margin-left: 25%;
+    margin-top: 10%;
+    margin-left: 18%;
     width: 60%;
     opacity: 0;
     position: absolute;
@@ -202,6 +203,19 @@ article .story-text .buttonUp,
     }
 
     article .story-text .card .band {
-        background-position: top 20% center;
+        background-position: top 10% center;
     }
+
+    article .story-text .card .paco {
+        background-position: top 40% center;
+    }
+
+    article .story-text .card .zaki {
+        background-position: top 10% center;
+    }
+
+    article .story-text .card .pachi {
+        background-position: top 30% center;
+    }
+
 }
