@@ -1,5 +1,6 @@
 "use strict";
 
+
 //FUNCION ANIMACION//
 
 let textosAnimados = document.querySelectorAll(".appear");
@@ -7,10 +8,19 @@ let buttonUp = document.querySelector(".buttonUp");
 let buttonDown = document.querySelector(".buttonDown");
 let count = 0;
 
+if (count == 0) {
+    buttonUp.classList.add("botonInvisible");
+}
+
+
 buttonUp.addEventListener("click", () => {
     let texto;
     if (count > 0) {
         count = count - 1;
+        buttonDown.classList.remove("botonInvisible");
+    }
+    if (count == 0) {
+        buttonUp.classList.add("botonInvisible");
     }
 
     textosAnimados.forEach(text => {
@@ -47,6 +57,10 @@ buttonDown.addEventListener("click", () => {
 
     if (count < 3) {
         count = count + 1;
+        buttonUp.classList.remove("botonInvisible");
+    }
+    if (count == 3) {
+        buttonDown.classList.add("botonInvisible");
     }
 
     textosAnimados.forEach(text => {

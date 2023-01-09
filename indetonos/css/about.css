@@ -124,8 +124,8 @@ article .story-text .buttonUp,
     color: aqua;
     animation: buttons 1s infinite;
     cursor: pointer;
-
 }
+
 
 
 @keyframes buttons {
@@ -135,7 +135,7 @@ article .story-text .buttonUp,
     }
 
     25% {
-
+        background-color: mediumblue;
         transform: rotate(20deg);
     }
 
@@ -154,6 +154,14 @@ article .story-text .buttonUp,
     }
 }
 
+.botonInvisible {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.botonVisible {
+    opacity: 1;
+}
 
 .animarScroll {
     animation: animarScroll 1s forwards;
