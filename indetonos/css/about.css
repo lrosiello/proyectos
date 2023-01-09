@@ -236,11 +236,5 @@ article .story-text .buttonUp,
 
     }
 
-    footer {
-        position: fixed;
-        width: 100%;
-        bottom: 0px;
-        margin-left: 0;
-        height: 20%;
-    }
+
 }
